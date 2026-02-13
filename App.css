@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.left-integ {
+  width: 644px;
+  height: 964px;
+  float: left;
+  margin-right: 150px;
+  top: 30px;
+  left: 39px;
+  border-radius: 18px;
+}
+
+  
+.fontdesign1{
+  text-align: justify;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 122%;
+  letter-spacing: 23%;
+  text-align: center;
+  text-transform: uppercase;
+
+
+}
+.fontdesign2{
+  text-align: justify;
+  font-family: Montserrat;
+  font-weight: 900; 
+  font-style: Black;
+  font-size: 90px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+
+
+} 
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
