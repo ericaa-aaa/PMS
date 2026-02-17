@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import IntegImage from './../public/IntegImage.jpg'
+import bginteg from './../public/bginteg.jpg'
 import './App.css'
 
 function App() {
   return (
-    <main style={{ display: "flex", height: "100vh", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+    <main style={{ display: "flex", height: "100vh", width: "100%", flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundImage: `url(${bginteg})` }}>
       <div style={{ display: "flex",flexDirection: "row", alignItems:"center" , justifyContent: "center"}}>
         <img src={IntegImage} alt="Logo" className="left-integ" style={{ maxHeight :"100rem", height: "800px", float: "left"}} />
       </div>
