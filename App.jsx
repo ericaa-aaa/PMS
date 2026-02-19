@@ -5,27 +5,35 @@ import './App.css'
 
 function App() {
   return (
-    <main className='flex flex-row w-screen h-screen justify-items-center overflow-hidden' 
-      style={{ backgroundImage: `url(${bginteg})`, backgroundSize:'cover', backgroundPosition:'center', 
-      backgroundAttachment:'fixed', backgroundRepeat:'no-repeat'}}>
+    <>
 
-        <div className='relative flex flex-row w-full'>
-          <div className='flex flex-row'>
-            <img src={IntegImage} alt="Logo" className='round-xl w-161 h-241 pl-10 py-10'/>
-          </div>
-            <div className='flex flex-col gap-3 justify-center mr-100 text-center'>
-              <h2 className='absolute gap-10 pl-58 top-60.75 left-219 w-92.25 h-12 text-3xl font-serif font-semibold tracking-[0.4em] text-center'> INTEGRITY</h2>
-              <h1 className='absolute gap-10 pl-55 top-64.75 left-219 w-92.25 h-33.75 text-[128px] text-center font-extrabold tracking-widest text-gray-800 font-montserrat'> PMS</h1>
-            </div>
-              <div className='flex flex-col gap-5 pt-80 items-end justify-center mr-100 text-center'>
-                <input type="text" placeholder='Username' className='w-101 h-13.75 border-2 border-gray-300 rounded-xs text-[16px] px-4 py-3 mb-4 focus:outline-none focus:ring-1 focus:ring-gray-500'/>
-                <input type="text" placeholder='Password' className='w-101 h-13.75 border-2 border-gray-300 rounded-xs text-[16px] px-4 py-3 mb-4 focus:outline-none focus:ring-1 focus:ring-gray-500' />
-                <button type='submit' className='w-full border-2 bg-red-600 hover:bg-red-700 transition text-white font-semibold py-3 rounded-lg shadow-md'>Login</button>
-                <p className='align-text-bottom text-xs text-gray-400 mt-10 justify-center text-center mb-0 pr-10 pb-10'>Copyright © 2010-2024 IntegrityPMS. All Right Reserved.  </p> 
+      <main className='flex w-screen h-screen overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed justify-around'
+      style={{ backgroundImage: `url(${bginteg})`}} >
+      
+            <div className='flex flex-row rounded-full'>
+              <img src={IntegImage} alt="Logo" className='rounded-4xl my-5 ml-5 relative right-50'/>
+            
+              <div className="w-1/2 flex flex-col items-center justify-center text-center px-20">
+                  <h2 className="text-2xl font-serif tracking-[0.4em] mb-2">INTEGRITY</h2>
+                  <h1 className="text-[90px] font-extrabold tracking-widest text-gray-800 mb-8">PMS</h1>
+                <div className="w-full max-w-md">
+                    <input type="text" placeholder="Username" className="w-full border border-gray-300 px-4 py-3 mb-4 focus:outline-none focus:ring-1 focus:ring-gray-500"/>
+                    <input type="password" placeholder="Password" className="w-full border border-gray-300 px-4 py-3 mb-6 focus:outline-none focus:ring-1 focus:ring-gray-500"/>
+                    <button className="w-full bg-red-600 hover:bg-red-700 transition text-white font-semibold py-3 rounded-md">Login</button>
+                    <p className="text-xs text-gray-400 mt-12 relative top-50">Copyright © 2010-2024 IntegrityPMS. All Right Reserved.</p>
+                  </div>
               </div>
-        </div>
-    </main>
+              </div>
+        </main>
+    </>
   )
 }
 export default App
 
+/* ang width ay 50%, tapos flex para ma spread out siya regardless anong size ng desktop and walang magulo, 
+tas centered lahat ng items, pagkaka justify at text tas ang px is para pantay ang height and width.
+yung tracking is the spaces between the letters para naka spread out and pantay safirst text or kung how i want it 
+parang ganon rin ang tracking-widest ang difference ay may value siya which is 0.1rem.
+ang max-w-md naman ay ang maximum width ng containers which means hanggang dun lang siya.
+
+*/
